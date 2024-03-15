@@ -10,7 +10,7 @@ import { logIn, logOut, refreshUser, signUp } from "./operations";
 
 const initialState = {
   user: { email: "", password: "" },
-  token: "",
+  token: null,
   isLoggedIn: false,
   isRefreshing: false,
   isLoading: false,

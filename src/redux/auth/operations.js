@@ -17,7 +17,7 @@ const clearAuthHeader = () => {
 export const auth = createAsyncThunk("auth", async (access_id, thunkAPI) => {
   try {
     const res = await axios.post("/access-token", access_id);
-    console.log(res.data.token);
+    console.log(res);
     // setAuthHeader(res.data.token);
     // Notify.success("You are logged in!");
 
